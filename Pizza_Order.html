@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <img src="pizza.jpg">
+  <h1>Choose your Pizza</h1>
+  <hr>
+  <form class="" action="http://ss1.ciwcertified.com/cgi-bin/process.pl" method="text/plain">
+    <br>
+    <h1>Pizza Type:</h1>
+    <br>
+    <br>
+    <fieldset>
+      <legend><h3>Choose your pizza size</h3></legend>
+        <input type="radio" id="S" name="day" value="Small">
+        <label for="S">&nbsp; Small 10"</label>
+      <br>
+        <input type="radio" id="M" name="day" value="Medium">
+        <label for="M">&nbsp; Medium 15"</label>
+      <br>
+        <input type="radio" id="L" name="day" value="Large">
+        <label for="L">&nbsp; Large 20"</label>
+      <br>
+        <input type="radio" id="XL" name="day" value="X-Large">
+        <label for="XL">&nbsp; X-Large 25"</label>
+      <br>
+        <legend><h3>Choose your base</h3></legend>
+          <input type="radio" id="Thin" name="day" value="Thin">
+          <label for="Thin">&nbsp; Thin</label>
+        <br>
+          <input type="radio" id="Thick" name="day" value="Thick">
+          <label for="Thick">&nbsp; Thick</label>
+      <fieldset>
+        <legend><h3>Choose desired Toppings</h3></legend>
+      <b>Meat Toppings:</b>
+      <br>
+      <table>
+                <tbody>
+
+                    <tr>
+                        <td>
+                            <input type="radio" name="bacon" id="bacon">
+                            <label for="bacon">Bacon</label>
+                            <input type="radio" name="pepperoni" id="pepperoni">
+                            <label for="pepperoni">Pepperoni</label>
+                            <input type="radio" name="chicken" id="chicken">
+                            <label for="chicken">Chicken</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <input type="radio" name="salami" id="salami">
+                            <label for="salami">Salami</label>
+                            <input type="radio" name="ham" id="ham">
+                            <label for="ham">Ham</label>
+                            <input type="radio" name="meat" id="meat">
+                            <label for="meat">Meatballs</label>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <b>Vegetable Toppings:</b>
+            <br>
+            <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="tomatoes" id="tomatoes">
+                                        <label for="tomatoes">Tomatoes</label>
+                                        <input type="radio" name="onion" id="onion">
+                                        <label for="onion">Onion</label>
+                                        <input type="radio" name="chilli" id="chilli">
+                                        <label for="chilli">Chilli</label>
+                                        <input type="radio" name="mushroom" id="mushroom">
+                                        <label for="mushroom">Mushroom</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="radio" name="pickle" id="pickle">
+                                        <label for="pickle">Pickles</label>
+                                        <input type="radio" name="sweetcorn" id="sweetcorn">
+                                        <label for="sweetcorn">Sweetcorn</label>
+                                        <input type="radio" name="pepper" id="pepper">
+                                        <label for="pepper">Pepper</label>
+                                        <input type="radio" name="pineapple" id="pineapple">
+                                        <label for="pineapple">Pineapple</label>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+      </fieldset>
+      <br>
+      <br>
+      <textarea name="Message" rows="8" cols="80" placeholder="Allergy information..."></textarea>
+      <br>
+      <hr>
+      <fieldset>
+        <legend>Personal information</legend>
+        <br>
+        <label for="Name">
+          Name:
+        </label>
+        <input type="text" name="FullName" value="" id="Name" required>
+        <br>
+        <label for="Email">
+          Email:
+        </label>
+        <input type="email" name="Email" value="" id="Email" required>
+        <br>
+        <label for="Phone">
+          Phone:
+        </label>
+        <input type="number" name="PhoneNumber" value="" id="Phone" required>
+        <br>
+        <label for="Address">
+          Address:
+        </label>
+        <br>
+              <textarea name="Address" rows="8" cols="80" placeholder="Delivery Address..."></textarea>
+      </fieldset>
+      <br>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+      <legend><h3>Payment method:</h3></legend>
+    <label for="payment-choice">Choose payment method:</label>
+    <input list="types-of-payments" id="payment-choice" name="payment-choice" />
+    <br>
+    <datalist id="types-of-payments">
+      <option value="PayPal">
+      <option value="Cash">
+      <option value="Card Payment">
+    </datalist>
+    <br>
+    <label for="Card Number">
+      Card Number:
+    </label>
+    <input type="number" name="Card number" value="" id="Card Number" required>
+    <br>
+    <label for="Expiry Date">
+      Expiry Date:
+    </label>
+    <input type="number" name="Expiry Date" value="" id="Expiry Date" required>
+    <br>
+    <label for="Security Code">
+      Security Code:
+    </label>
+    <input type="number" name="Security Code" value="" id="Security Code" required>
+    <br>
+    <br>
+    <input type="checkbox" name="" value="" required>
+    <input type="submit" name="" value="Submit your Order">
+    </fieldset>
+
+
+  </form>
+
+
+
+</body>
+
+</html>
